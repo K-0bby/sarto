@@ -21,8 +21,11 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Sarto",
-  description: "Sarto",
+  title: {
+    template: "%s | Sarto",
+    default: "Sarto"
+  },
+  description: "An e-commerce web app",
 };
 
 export default function RootLayout({
